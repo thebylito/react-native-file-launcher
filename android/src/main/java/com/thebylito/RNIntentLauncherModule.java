@@ -23,14 +23,14 @@ import com.facebook.react.bridge.WritableMap;
 import java.io.File;
 import java.util.List;
 
-public class RNIntentLauncherModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+public class RNFileLauncherModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
     private static final int REQUEST_CODE = 12;
     private static final String FILE_NAME = "fileName";
     private final ReactApplicationContext reactContext;
     Promise promise;
 
-    public RNIntentLauncherModule(ReactApplicationContext reactContext) {
+    public RNFileLauncherModule(ReactApplicationContext reactContext) {
         super(reactContext);
         reactContext.addActivityEventListener(this);
         this.reactContext = reactContext;
@@ -45,7 +45,7 @@ public class RNIntentLauncherModule extends ReactContextBaseJavaModule implement
 
     @Override
     public String getName() {
-        return "RNIntentLauncher";
+        return "RNFileLauncher";
     }
 
     @ReactMethod

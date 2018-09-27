@@ -11,10 +11,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class RNIntentLauncherPackage implements ReactPackage {
+public class RNFileLauncherPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNIntentLauncherModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNFileLauncherModule(reactContext));
     }
 
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {

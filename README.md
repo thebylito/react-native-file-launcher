@@ -18,8 +18,8 @@ Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o 
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
-- Add `import com.thebylito.RNIntentLauncherPackage;` to the imports at the top of the file
-- Add `new RNIntentLauncherPackage()` to the list returned by the `getPackages()` method
+- Add `import com.thebylito.RNFileLauncherPackage;` to the imports at the top of the file
+- Add `new RNFileLauncherPackage()` to the list returned by the `getPackages()` method
 
 2. Append the following lines to `android/settings.gradle`:
    ```
@@ -52,10 +52,10 @@ Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o 
 ## Usage
 
 ```javascript
-import RNIntentLauncher from 'react-native-intent-launcher';
+import RNFileLauncher from 'react-native-intent-launcher';
 
 try {
-  await StartIntent.startActivity({ fileName }); // Que esta dentro da pasta downloads;
+  await RNFileLauncher.startActivity({ fileName }); // Que esta dentro da pasta downloads;
 } catch (e) {
   /* Se não existir um programa para abrir a Promisse é rejeitada */
   console.log(e);

@@ -1,4 +1,4 @@
 import { NativeModules } from 'react-native';
 
-const { RNIntentLauncher } = NativeModules;
-export default RNIntentLauncher;
+const { RNFileLauncher } = NativeModules;
+export default RNFileLauncher;
