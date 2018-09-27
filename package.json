@@ -1,7 +1,7 @@
 {
   "name": "react-native-file-launcher",
   "title": "React Native file Launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
