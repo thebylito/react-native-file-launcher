@@ -1,4 +1,4 @@
-# react-native-intent-launcher
+# react-native-file-launcher
 
 ## Getting started
 Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o nome do mesmo. O Dispositivo mostrara ao usuario os aplicativos que podem abrir aquele arquivo.
@@ -6,11 +6,11 @@ Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o 
 
 ## Getting started
 
-`$ npm i -s react-native-intent-launcher`
+`$ npm i -s react-native-file-launcher`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-intent-launcher`
+`$ react-native link react-native-file-launcher`
 
 ### Manual installation
 
@@ -23,12 +23,12 @@ Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o 
 
 2. Append the following lines to `android/settings.gradle`:
    ```
-   include ':react-native-intent-launcher'
-   project(':react-native-intent-launcher').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-intent-launcher/android')
+   include ':react-native-file-launcher'
+   project(':react-native-file-launcher').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-file-launcher/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
 	```
-	compile project(':react-native-intent-launcher')
+	compile project(':react-native-file-launcher')
 	```
 
 4. Adicionar em `AndroidManifest.xml`
@@ -52,7 +52,7 @@ Pacote desevolvido para abrir arquivos da pasta Downloads, desde que se saiba o 
 ## Usage
 
 ```javascript
-import RNFileLauncher from 'react-native-intent-launcher';
+import RNFileLauncher from 'react-native-file-launcher';
 
 try {
   await RNFileLauncher.startActivity({ fileName }); // Que esta dentro da pasta downloads;
