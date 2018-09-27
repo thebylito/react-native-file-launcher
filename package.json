@@ -1,6 +1,6 @@
 {
-  "name": "react-native-intent-launcher",
-  "title": "React Native Intent Launcher",
+  "name": "react-native-file-launcher",
+  "title": "React Native file Launcher",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-intent-launcher.git",
-    "baseUrl": "https://github.com/github_account/react-native-intent-launcher"
+    "url": "git+https://github.com/github_account/react-native-file-launcher.git",
+    "baseUrl": "https://github.com/github_account/react-native-file-launcher"
   },
   "keywords": [
     "react-native"
